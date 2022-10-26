@@ -1,0 +1,3 @@
+[2022-10-19T11:09:35.450544-03:00] configuracao_email.INFO: Configuração de e-mail cadastrado com sucesso {"IP":"::1","id":"14","email":"fernandocarvalho.sena@gmail.com"} []
+[2022-10-19T11:09:38.821927-03:00] configuracao_email.INFO: Configuração deletada com sucesso: ID: 2 {"IP":"::1","id":"14","email":"fernandocarvalho.sena@gmail.com"} []
+[2022-10-19T11:09:53.873322-03:00] configuracao_email.INFO: Configuração de e-mail cadastrado com sucesso {"IP":"::1","id":"14","email":"fernandocarvalho.sena@gmail.com"} []

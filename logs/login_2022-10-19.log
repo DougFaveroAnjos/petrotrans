@@ -1,0 +1,2 @@
+[2022-10-19T10:45:42.962804-03:00] login.INFO: Admin logado {"IP":"127.0.0.1","id":"14","email":"fernandocarvalho.sena@gmail.com"} []
+[2022-10-19T11:10:36.856441-03:00] login.INFO: Admin logado {"IP":"::1","id":"14","email":"fernandocarvalho.sena@gmail.com"} []

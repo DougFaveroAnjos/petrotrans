@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(50, 54, 57);
+  width: 100%;
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    width: 50%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 2rem;
+
+    list-style: none;
+
+    a {
+      color: white;
+    }
+
+    .accept {
+      .accept-refuse {
+        &:hover {
+          color: red;
+        }
+      }
+
+      .accept-accept {
+        &:hover {
+          color: lawngreen;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    nav {
+      width: 100%;
+    }
+  }
+
+}

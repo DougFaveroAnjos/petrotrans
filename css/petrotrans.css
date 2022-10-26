@@ -1,0 +1,66 @@
+.logoPetro{
+    height: 25%;
+    width: 25%;
+}
+
+.novoH2{
+    margin-bottom: -6%;
+    color: #00fb23;
+    text-shadow: 3px 3px 3px black;
+}
+
+.novoH1{
+    color: #00fb23;
+    text-shadow: 3px 3px 3px black;
+}
+
+.novoVideo{
+    position: absolute; width: 100%; height: 120%;   
+}
+
+.titulo{
+    padding-top: 45%;
+}
+
+.servicos{
+    position: absolute;
+    margin-top: 10%;
+    margin-bottom: -6%;
+    color: #00fb23;
+    text-shadow: 3px 3px 3px black;
+    margin-left: -100%; font-size: 4em; border-bottom: 2px green;
+}
+
+.servicosCliente{
+    position: absolute;
+    margin-top: 25%;
+    margin-bottom: -6%;
+    color: #fff;
+    margin-left: -100%; font-size: 2em; border-bottom: 2px green;
+}
+
+.servicoBotao {
+    position: absolute;
+    padding: 10%;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: -100%;
+    margin-top: 35%;
+}
+
+.servicoBotao:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+    border: 10px blue;
+}
+
+#servFech{
+    background-image: url("imagens/PETROTRANS_GALPAO.png");
+}

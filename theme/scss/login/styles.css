@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body video {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    position: relative;
+  }
+  body video {
+    position: absolute;
+    top: 8%;
+    left: 0;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2rem 3rem;
+  background-color: white;
+  box-shadow: -1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+main .back-button {
+  opacity: 0.8;
+  color: black;
+  width: fit-content;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+main h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.8;
+}
+main .login-form,
+main .register-form {
+  display: flex;
+  flex-direction: column;
+}
+main .login-form span,
+main .register-form span {
+  font-size: 0.7rem;
+}
+main .login-form span a,
+main .register-form span a {
+  text-decoration: none;
+  color: #0067b8;
+}
+main .login-form span a:hover,
+main .register-form span a:hover {
+  text-decoration: underline;
+}
+main .msg {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  text-align: center;
+  display: none;
+}
+main .msg.on {
+  display: block;
+}
+main .msg .error, main .msg.error {
+  color: red;
+}
+main .msg .success, main .msg.success {
+  color: lawngreen;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    width: 95%;
+    text-align: center;
+  }
+}
+input[type=submit] {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 0.8rem;
+  background-color: #0067b8;
+  outline: none;
+  border: none;
+}
+input[type=submit]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 900px) {
+  input[type=submit] {
+    align-self: center;
+    width: 40%;
+    padding: 0.5rem 0.5rem;
+  }
+}
+input[type=email],
+input[type=password],
+input[type=text],
+select {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 2.2rem;
+  padding: 6px 10px;
+  margin-bottom: 1.4rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  font-size: 0.9rem;
+}
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+select:focus {
+  border-bottom: 1px solid #0067b8;
+}
+
+/*# sourceMappingURL=styles.css.map */

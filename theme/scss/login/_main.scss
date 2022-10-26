@@ -1,0 +1,79 @@
+main {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  padding: 2rem 3rem;
+
+  background-color: white;
+  box-shadow: -1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+
+  .back-button {
+    opacity: .8;
+    color: black;
+
+    width: fit-content;
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    opacity: .8;
+  }
+
+  .login-form,
+  .register-form {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: .7rem;
+
+      a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .msg {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+
+    border-radius: 1rem;
+    border: 1px solid black;
+    text-align: center;
+
+    display: none;
+
+    &.on {
+      display: block;
+    }
+
+    .error,
+    &.error{
+      color: red;
+    }
+
+    .success,
+    &.success{
+      color: lawngreen;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    width: 95%;
+    text-align: center;
+  }
+}

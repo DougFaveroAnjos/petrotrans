@@ -1,0 +1,105 @@
+@font-face
+{
+    font-family: 'Sansation';
+    src: url(../FONTE/Sansation_Regular);
+}
+
+html{
+    font-family: Sansation;
+    background-image: url("../imagens/login/background%20rodovia%20PETROTRANS.jpg");    
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    margin-left: -2%;
+    border-bottom: 5px solid chartreuse;
+    padding: 0% 0% 2% 3%;
+    width: 99.5%;
+}
+
+header img{
+    position: relative;
+    margin-left: 0%;
+    width: 10%;
+    float: left;
+    z-index: 1;
+}
+
+div{
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 30%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+input{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    padding: 3%;
+    border: 1px solid chartreuse;
+    border-radius: 10px;
+    width: 90%;
+    font-size: 1em;
+    color: chartreuse;
+    margin-bottom: 5%;
+}
+
+button, a{
+    text-decoration: none;
+    cursor: hand;
+    cursor: pointer;
+}
+
+h1{
+    color: chartreuse;
+    margin-bottom: 10%;
+}
+
+button{
+    color: black;
+    background: chartreuse;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 3% 7% 3% 7%;
+    font-family: Sansation;
+}
+
+button:hover{
+    color: chartreuse;
+    background: black;
+    border: 2px solid chartreuse;
+}
+
+a{
+    position: relative;
+    color: chartreuse;
+    margin-left: 4%;
+}
+
+a:hover{
+    color: black;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: chartreuse;
+}
+
+figure{
+    position: absolute;
+    margin-left: 20%;
+}
+
+figure h1{
+    text-align: center;
+}
+
+nav{
+    padding: 2% 0% 0% 0%;
+}
+
+nav a{
+    margin-left: 0%;
+}
