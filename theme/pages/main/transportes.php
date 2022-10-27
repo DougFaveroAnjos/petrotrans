@@ -148,10 +148,9 @@
                                 <?php endforeach; ?>
                             </select>
 
-                            <a id="add-button" href="#"
+                            <button id="add-button" href="#" class="btn"
                                data-action="<?= $router->route('Transportes.new') ?>"
-                               style="font-weight: bold"
-                            >Adicionar Transporte</a>
+                               style="font-weight: bold; scale: 80%; margin-bottom: -25px;" >Adicionar Transporte</button>
                         </div>
 
                 </div>

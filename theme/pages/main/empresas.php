@@ -78,7 +78,7 @@
 
                             <tr>
                                 <td>
-                                    <a href="#" class="items-open <?= $empresa->id ?>"> <i class="fas fa-bars"></i> </a>
+                                    <a href="#" class="items-open <?= $empresa->id ?>"> <button class="btnActions">Ações</button> </a>
                                     <div class="items <?= $empresa->id ?>">
                                         <a class="items-close <?= $empresa->id ?>" href="#"><i class="fas fa-times"></i></a>
                                         <a href="<?= $router->route('Empresas.editEmpresa', ['id'=> $empresa->id]) ?>" class="edit-button <?= $empresa->id ?>">Editar</a>
@@ -89,7 +89,7 @@
                                 <td>
                                     <?= $empresa->name ?>
                                 </td>
-                                <td class="form-control" style="border: 1px solid #f96332; font-weight: bold; padding: .5rem 1rem; <?php
+                                <td class="form-control" style="border: 1px solid #373f51; font-weight: bold; padding: .5rem 1rem; margin-top:3px; <?php
                                 switch ($empresa->status):
 
                                     case "cliente":

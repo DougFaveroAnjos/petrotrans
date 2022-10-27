@@ -97,7 +97,7 @@
 
                         <tr>
                             <td>
-                                <a href="#" class="items-open <?= $contato->id ?>"> <i class="fas fa-bars"></i> </a>
+                                <a href="#" class="items-open <?= $contato->id ?>"> <button class="btnActions">Ações</button> </a>
                                <div class="items <?= $contato->id ?>">
                                <a href="#" class="items-close <?= $contato->id ?> mail" data-action="<?= $router->route('Coletas.mail', ['emailapresentacao' => $contato->email, 'nomecontato' => $contato->responsavel]) ?>">Enviar Apresentação</a>
                                 
@@ -106,14 +106,14 @@
                                 </div>
                                 <input class="form-control id <?= $contato->id ?>" type="hidden" name="id" value="<?= $contato->id ?>" disabled>
                             </td>
-                            <td style="display: flex;">
+                            <td style="">
                                 <a href="#" class="comentarios-open <?= $contato->id ?>" data-render="<?= $router->route('ComentariosContatos.render') ?>"> <i class="fas fa-comment-alt"></i> </a>
                                 <div class="comentarios <?= $contato->id ?>">
                                     <div class="comentarios-section <?= $contato->id ?>" style="position: relative; height: 80%">
 
                                     </div>
 
-                                    <div class="escrever-comentario <?= $contato->id ?>" style="display: flex; gap: 1rem">
+                                    <div class="escrever-comentario <?= $contato->id ?>" style=" gap: 1rem">
                                         <input placeholder="Escreva seu comentario" type="text" name="comentario" class="form-control comentario-input <?= $contato->id ?>" style="border: 1px solid #f96332;">
                                         <button style="font-size: .7rem; padding: .6rem .6rem" class="btn btn-primary comentario-send <?= $contato->id ?>" data-render="<?= $router->route('ComentariosContatos.render') ?>" data-action="<?= $router->route('ComentariosContatos.new') ?>">Comentar</button>
                                     </div>
@@ -174,7 +174,7 @@
                     </table>
                 </div>
             </div>
-            <div class="card-footer" style="display: flex; justify-content: center">
+            <div class="card-footer" style=" justify-content: center">
                 <?php
                 if(!array_key_exists("status", $_GET)):
                     echo $pager;

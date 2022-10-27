@@ -35,7 +35,7 @@
         if(empty($cliente['type'])):
     ?>
         <span style="margin-bottom: 1rem">Não tem uma conta? <a href="<?= $router->route('Login.register') ?>">Crie uma!</a></span>
-        <span><a href="<?= $router->route('Login.recover') ?>">Esqueci minha senha</a></span>
+        <span class="esqueci"><a href="<?= $router->route('Login.recover') ?>">Esqueci minha senha</a></span>
     <?php
         endif;
     ?>

@@ -216,13 +216,7 @@
                 $("#cnpj").unmask();
             } catch (e) {}
 
-            var tamanho = $("#cnpj").val().length;
-
-            if(tamanho < 11){
-                $("#cnpj").mask("999.999.999-99");
-            } else {
-                $("#cnpj").mask("99.999.999/9999-99");
-            }
+            $("#cnpj").mask("99.999.999/9999-99");
 
             // ajustando foco
             var elem = this;
@@ -281,5 +275,16 @@
 <script type="text/javascript">$("#contatoorigem2").mask("(00) 0000-00009");</script>
 <script type="text/javascript">$("#contatoorigem3").mask("(00) 0000-00009");</script>
 <script type="text/javascript">$("#contatoorigem4").mask("(00) 0000-00009");</script>
+<script>
+
+import IMask from 'imask';
+
+const cnpj = document.querySelector('#CNPJ');
+const cnpjPattern = {
+    mask: '00.000.000/0000-00'
+};
+const cnpjMask = IMask(cnpj, cnpjPattern);
+
+</script>
 
 <?php $this->stop() ?>

@@ -82,7 +82,7 @@
 
                                 <tr>
                                     <td style="display: flex;  gap: 2rem; align-items: center">
-                                        <a href="#" class="items-open <?= $fiscal->id ?>"> <i class="fas fa-bars"></i> </a>
+                                        <a href="#" class="items-open <?= $fiscal->id ?>"> <button class="btnActions">Ações</button> </a>
 
                                         <div class="items <?= $fiscal->id ?>">
                                             <a class="items-close <?= $fiscal->id ?>" href="#"><i class="fas fa-times"></i></a>

@@ -88,8 +88,8 @@
                         <?php if(!empty($coletas)): foreach ($coletas as $coleta): ?>
 
                             <tr>
-                                <td style="display: flex;  gap: 2rem; align-items: center;">
-                                    <a href="#" class="items-open <?= $coleta->id ?>" style="color: #27356f;"> <i class="fas fa-bars"></i> </a>
+                                <td style="gap: 2rem; align-items: center;">
+                                    <a href="#" class="items-open <?= $coleta->id ?>" style="color: #27356f;"> <button class="btnActions">Ações</button> </a>
 
                                     <div class="items <?= $coleta->id ?>" style=" border: solid 2px #008DD5; color: #008DD5; border-radius: 10px;">
                                         <a class="items-close <?= $coleta->id ?>" href="#"><i class="fas fa-times"></i></a>
@@ -107,7 +107,7 @@
                                 </td>
 
                                 <td><?= $coleta->date ?></td>
-                                <td style="display: flex; justify-content: center"><div style="width: 1rem; height: 1rem; border-radius: 100%; border: 1px inset black;
+                                <td style="justify-content: center"><div style="width: 1rem; height: 1rem; border-radius: 100%; border: 1px inset black;
                                  background-color: <?php if($coleta->email === null): echo 'gray'; else: echo 'lightgreen'; endif; ?>;"></div></td>
                                 <td><?= $coleta->coleta_id ?></td>
                                 <td><?= ((new \Source\Models\TransportesModel())->find("id = :n", "n={$coleta->transporte}")->fetch()->empresa_name ?? "<p style='font-weight: bold;'>CANCELADO</p>")?></td>

@@ -32,10 +32,11 @@
         border: none;
         border-radius: 10px;
         overflow: hidden;
-        transition: all 0.2s;
-        width:100%;
-        margin-top: 10px;
-        margin-bottom: -10px
+        transition: all 1s;
+        width:30%;
+        margin-top: 20px;
+        margin: 0 auto;
+        
     }
 
     .btn span {
@@ -47,32 +48,41 @@
     .btn svg {
         display: block;
         transform-origin: center center;
-        transition: transform 0.3s ease-in-out;
+        transition: transform .9s ease-in-out;
     }
 
     .btn:hover .svg-wrapper {
-        animation: fly-1 0.6s ease-in-out infinite alternate;
+        animation: fly-1 0.5s ease-in-out infinite alternate;
     }
 
     .btn:hover svg {
-        transform: translateX(1.2em) rotate(45deg) scale(1.1);
+        transform: translateX(8em) rotate(45deg) scale(1.1);
     }
 
     .btn:hover span {
-        transform: translateX(9em);
+        opacity: 0%;
+    }
+
+    .btn:hover{
+        cursor: pointer;
+        width:100%;
     }
 
     .btn:active {
         transform: scale(0.95);
     }
 
+    .esqueci{
+        margin-bottom: 20px;
+    }
+
     @keyframes fly-1 {
     from {
-        transform: translateY(0.1em);
+        transform: translateY(0.2em);
     }
 
     to {
-        transform: translateY(-0.1em);
+        transform: translateY(-0.2em);
     }
     }
 

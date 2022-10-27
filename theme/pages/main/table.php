@@ -40,7 +40,7 @@
                                     <input type="text" name="status" id="status-hidden-<?= $cotacao->id ?>" list="status">
                                     <datalist id="status">
                                         <option>Liberado</option>
-                                        <option>Aguardando Cliente</option>
+                                        <option style="color: black;">Aguardando Cliente</option>
                                     </datalist>
 
                                 </div>
@@ -229,7 +229,7 @@
                             <select class="filter-group form-control status-filter" style="max-width: 10rem" name="status" id="status" disabled>
                                 <option value="Fechado">Fechado</option>
                                 <option value="Não Fechou">Não Fechado</option>
-                                <option value="Aguardando Cliente">Aguardando Cliente</option>
+                                <option value="Aguardando Cliente" style="color: black;">Aguardando Cliente</option>
                                 <option value="Cancelado">Cancelado</option>
                             </select>
                         </div>
@@ -323,7 +323,7 @@
                             <form method="post" class="main-form <?= $cotacao->id ?>" data-action="<?= $router->route('Cotacoes.update'); ?>">
                                 <tr>
                                     <td style="display: flex;  gap: 2rem; align-items: center">
-                                        <a href="#" class="items-open <?= $cotacao->id ?>"> <i class="fas fa-bars"></i> </a>
+                                        <a href="#" class="items-open <?= $cotacao->id ?>"> <button class="btnActions">Ações</button> </a>
                                         <div class="items <?= $cotacao->id ?>">
                                             <a class="items-close <?= $cotacao->id ?>" href="#"><i class="fas fa-times"></i></a>
 
@@ -334,7 +334,7 @@
                                             <?php
                                                 endif;
                                             ?>
-                                            <div class="edit-div" style="display: flex; justify-content: space-around; align-items: center; min-width: 40%">
+                                            <div class="edit-div" style="justify-content: space-around; align-items: center; min-width: 40%">
                                                 <a href="#" class="edit-button <?= $cotacao->id ?>" >Alterar Status</a>
                                                 <button type="submit" name="submit" class="btn form-control submit <?= $cotacao->id ?> " value="Confirmar" style="font-weight: bold;">Confirmar</button>
                                             </div>
@@ -382,7 +382,7 @@
                                         <?= $cotacao->date ?>
                                     </td>
                                     <td style="min-width: 14rem">
-                                        <select style="border: 1px solid #373f51;; color: #373f51; font-weight: bold" data-pagamento="<?= $cotacao->pagamento ?>" class="form-control status <?= $cotacao->id; ?> <?php
+                                        <select style="border: 1px solid #373f51; color: white; font-weight: bold" data-pagamento="<?= $cotacao->pagamento ?>" class="form-control status <?= $cotacao->id; ?> <?php
                                         foreach ($empresas as $empresa) :
                                             if($empresa->id === $cotacao->cliente_id) :
                                                 echo $empresa->spc;
@@ -403,8 +403,8 @@
                                         endforeach;
                                         ?>" disabled="">
                                             <option style="background-color: dodgerblue;" value="Fechado" <?php if($cotacao->status == "Fechado"): echo "selected"; endif; ?>>Fechado</option>
-                                            <option style="background-color: red;" value="Nao Fechou" <?php if($cotacao->status == "Nao Fechou"): echo "selected"; endif; ?>>Não Fechou</option>
-                                            <option style="background-color: yellow;" value="Aguardando Cliente" <?php if($cotacao->status == "Aguardando Cliente"): echo "selected"; endif; ?>>Aguardando Cliente</option>
+                                            <option style="background-color: red; color: #fff" value="Nao Fechou" <?php if($cotacao->status == "Nao Fechou"): echo "selected"; endif; ?>>Não Fechou</option>
+                                            <option style="background-color: yellow; color: black;" value="Aguardando Cliente" <?php if($cotacao->status == "Aguardando Cliente"): echo "selected"; endif; ?>>Aguardando Cliente</option>
                                             <option style="background-color: orange;" value="Cancelado" <?php if($cotacao->status == "Cancelado"): echo "selected"; endif; ?>>Cancelado</option>
                                             <option style="background-color: blue;color: #fff;" value="Aguardando Transportadora" <?php if($cotacao->status == "Aguardando Transportadora"): echo "selected"; endif; ?>>Aguardando Transportadora</option>
 

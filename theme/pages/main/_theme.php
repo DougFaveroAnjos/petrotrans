@@ -196,6 +196,28 @@
         animation: docsAnimation 2s infinite ease-in-out;
     }
 
+    /**
+    * Botão Ações
+    */
+
+    .btnActions{
+        border: solid 1px #373f51;
+        border-radius: 5px;
+        background: #E1f7f6;
+        font-weight: bold;
+        transition: .7s ease;
+        font-size: 12px
+    }
+
+    .btnActions:hover{
+        background: #a3d7f2;
+        border-radius: 15px;
+    }
+
+
+    /**
+    * Animations
+    */
 
     @keyframes docsAnimation {
         0%{
@@ -530,5 +552,6 @@
         CKEDITOR.replace( 'signature' );
         CKEDITOR.replace( 'corpo' );
 </script>
+<!--Tratamento de Dados-->
 </body>
 </html>
