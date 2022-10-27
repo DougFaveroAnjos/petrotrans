@@ -56,12 +56,12 @@
                                 <div class="form-group">
                                     <label>DOCUMENTOS</label>
 
-                                    <div class="files">
+                                    <button class="files" id="addFiles">
 
-                                        <label style="cursor: pointer" class="file-input"> + </label>
+                                        <label style="cursor: pointer; color: #008DD5;" class="file-input"> + </label>
                                         <input style="cursor: pointer" class="motorista-input" id='arquivo' accept="image/jpeg, image/jpg, image/png, application/pdf" type="file" name="documentos[]" multiple="multiple">
 
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-9">

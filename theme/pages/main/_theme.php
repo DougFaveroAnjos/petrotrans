@@ -185,9 +185,29 @@
     }
 
     .add-button:before{
-        color: #373f51
+        color: #373f51;
     }
 
+    #addFiles{
+        border: solid 1px #373f51;
+    }
+
+    #addFiles:hover{
+        animation: docsAnimation 2s infinite ease-in-out;
+    }
+
+
+    @keyframes docsAnimation {
+        0%{
+            scale: 100%;
+        }
+        50%{
+            scale: 90%;
+        }
+        100%{
+            scale: 100%;
+        }
+    }
 
     </style>
 

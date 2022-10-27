@@ -92,7 +92,7 @@
 
                         <div class="row justify-content-end">
                             <div class="col-md-3">
-                                <input type="submit" class="form-control" name="submit" value="Criar Transporte" style="border: 2px solid #f96332; font-weight: bold; padding: .8rem 1rem;margin-top: 2rem">
+                                <button type="submit" class="btn form-control" name="submit" value="Criar Transporte" style="font-weight: bold; padding-top: -10px;">Criar</button>
                             </div>
                         </div>
                     </form>
@@ -336,7 +336,7 @@
                                             ?>
                                             <div class="edit-div" style="display: flex; justify-content: space-around; align-items: center; min-width: 40%">
                                                 <a href="#" class="edit-button <?= $cotacao->id ?>" >Alterar Status</a>
-                                                <input type="submit" name="submit" class="form-control submit <?= $cotacao->id ?> " value="Confirmar" style="border: 2px solid #f96332; font-weight: bold;">
+                                                <button type="submit" name="submit" class="btn form-control submit <?= $cotacao->id ?> " value="Confirmar" style="font-weight: bold;">Confirmar</button>
                                             </div>
 
                                             <?php
@@ -382,7 +382,7 @@
                                         <?= $cotacao->date ?>
                                     </td>
                                     <td style="min-width: 14rem">
-                                        <select style="border: 1px solid #f96332; color: black; font-weight: bold" data-pagamento="<?= $cotacao->pagamento ?>" class="form-control status <?= $cotacao->id; ?> <?php
+                                        <select style="border: 1px solid #373f51;; color: #373f51; font-weight: bold" data-pagamento="<?= $cotacao->pagamento ?>" class="form-control status <?= $cotacao->id; ?> <?php
                                         foreach ($empresas as $empresa) :
                                             if($empresa->id === $cotacao->cliente_id) :
                                                 echo $empresa->spc;
